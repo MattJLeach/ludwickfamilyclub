@@ -1,0 +1,22 @@
+#admin {
+  position: relative;
+  //padding-bottom: 70px;
+
+  #canvass {
+    padding-bottom: 80px;
+  }
+
+  .admin-table-buttons {
+    width: 140px;
+  }
+
+  footer {
+    margin-top: 25px;
+    padding-top: 15px;
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+    border-top: 1px solid #ccd0d2;
+  }
+}

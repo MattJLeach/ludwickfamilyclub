@@ -1,0 +1,284 @@
+#site {
+	/* All styles for fonts */
+	* {font-family: 'Indie Flower', cursive;}
+	p, div, a {
+		font-size: 16px;
+	}
+
+	#canvass {
+		position: relative;
+		padding: 10px 0;
+		background: url(/images/background.jpg);
+	}
+
+	#content {
+		padding-bottom: 100px;
+	}
+
+	footer {
+		margin-top: 25px;
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	/* Navbar styling */
+	.navbar-header {
+		padding-left: 15px;
+	}
+
+	.navbar-brand {
+		color: #333333;
+	}
+
+	.navbar-nav>li>a {
+		margin-left: 10px;
+		color: #333333;
+	}
+
+	.nav>li>a:hover,
+	.nav>li>a:focus {
+		background-color: transparent;
+	}
+
+	.navbar-toggle {
+		margin-right: 35px;
+		background-color: #6C6C6C;
+	}
+
+	.navbar-toggle .icon-bar {
+		background-color: white;
+	}
+
+	@media (max-width: 767px) {
+		.navbar-right>li {
+			transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+			width: 50%;
+			left: 50%;
+		}
+		.navbar-right>li>a {
+			text-align: center;
+		}
+	}
+	/* End of Navbar Styling */
+
+	/* All styles for angled boxes */
+	.angle-sm-right { transform: rotate(2deg); -o-transform: rotate(2deg); -moz-transform: rotate(2deg); -webkit-transform: rotate(2deg); }
+	.angle-sm-left { transform: rotate(-2deg); -o-transform: rotate(-2deg); -moz-transform: rotate(-2deg); -webkit-transform: rotate(-2deg); }
+	.angle-md-right { transform: rotate(3deg); -o-transform: rotate(3deg); -moz-transform: rotate(3deg); -webkit-transform: rotate(3deg); }
+	.angle-md-left { transform: rotate(-3deg); -o-transform: rotate(-3deg); -moz-transform: rotate(-3deg); -webkit-transform: rotate(-3deg); }
+	.angle-lg-right {	transform: rotate(4deg); -o-transform: rotate(4deg); -moz-transform: rotate(4deg); -webkit-transform: rotate(4deg); }
+	.angle-lg-left { transform: rotate(-4deg); -o-transform: rotate(-4deg); -moz-transform: rotate(-4deg); -webkit-transform: rotate(-4deg); }
+	/* End of angled boxes */
+
+	/* Home Page Styling */
+
+	.home-image {
+		padding: 30px 75px 75px 75px;
+	}
+
+	@media (max-width: 764px) {
+		.home-image {
+			padding: 15px 10px 50px 10px;		
+		}
+	}
+
+	/* End of Home Page Styling */
+
+
+
+
+	.club-image {
+		margin-top: 40px;
+		padding: 75px;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	.club-details {
+		padding: 25px 0;
+	}
+
+	.club-description {
+		padding: 40px 50px;
+	}
+
+	.ludwick-poster {
+		width: 90%;
+		margin: 15px 5%;
+		padding-top: 50px;
+	}
+
+
+
+	/* All styles for box padding */
+
+	.address-box {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+
+	.full-width {
+		width: 100%;
+	}
+
+
+
+	.paper {
+		padding: 15px;
+	}
+
+	.paper-lg {
+		padding: 30px;
+	}
+
+	.paper h1 {
+		margin: 0;
+	}
+
+	/* .paper-old-lg {
+		background: url(../images/paper-old-lg.png) no-repeat;
+		background-size: 100% 100%;
+		-o-background-size: 100% 100%;
+		-moz-background-size: 100% 100%;
+		-webkit-background-size: 100% 100%;
+	} */
+
+	.paper-title,
+	.navbar-header,
+	.navbar-nav>li>a {
+		background: url(/images/title-paper.png) no-repeat;
+		background-size: 100% 100%;
+		-o-background-size: 100% 100%;
+		-moz-background-size: 100% 100%;
+		-webkit-background-size: 100% 100%;
+	} 
+
+	section {
+		margin: 40px 0;
+	}
+
+	.facility-text {
+		padding: 30px 75px 75px 75px;
+	}
+
+	.facility-text img {
+		margin: 5px;
+	}
+
+	.club {
+		margin-top: 10px;
+		height: 200px;
+	}
+
+	.club-contact {
+		padding-left: 0;
+	}
+
+	.box {
+		height: 180px;
+		width: 100%;
+		display: table;
+	}
+
+	.box-text {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 10px;
+	}
+
+	.box-text h4 {
+		margin-top: 0;
+	}
+
+	.box-text p {
+		margin-bottom: 0;
+	}
+
+	.link:hover {
+		text-decoration: none;
+		transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		transition: transform 0.5s ease-out;
+		-o-transition: transform 0.5s ease-out;
+		-moz-transition: transform 0.5s ease-out;
+		-webkit-transition: transform 0.5s ease-out;
+	}
+
+	#contact {
+		padding-top: 50px;
+	}
+
+	.people {
+		padding: 75px;
+	}
+
+	.people-img {
+		width: 100%;
+		border-radius: 10px;
+	}
+
+	.contact-header span {
+		display: block;
+	}
+
+	/* Social styling */
+
+	.fa {
+		font-size: 25px;
+		padding: 5px;
+		color: white;
+		width: 45px;
+		margin: 10px 0;
+	}
+
+	.fa-facebook {
+		background-color: #244872;
+		border: 1px solid #244872;
+	}
+	.fa-facebook:hover {
+		color: #244872;
+	}
+
+	.fa-twitter {
+		background-color: #26C4F1;
+		border: 1px solid #26C4F1;
+	}
+	.fa-twitter:hover {
+		color: #23C4F1;
+	}
+
+	.fa-google-plus {
+		background-color: #E93F2E;
+		border: 1px solid #E93F2E;
+	}
+	.fa-google-plus:hover {
+		color: #E93F2E;
+	}
+
+	.fa:hover {
+		background-color: white;
+	}
+
+	/* All media queries below */
+
+	@media (min-width: 1200px) {
+
+	}
+
+	@media (min-width: 992px) {
+		
+	}
+
+	@media (max-width: 764px) {
+		
+	}
+}
