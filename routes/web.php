@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'HomeController@index');
 Route::get('/facilities', 'FacilitiesController@index');
 Route::get('/clubs', 'ClubsController@index');
 Route::get('/club/{slug}', 'ClubsController@show');

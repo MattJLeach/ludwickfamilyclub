@@ -35,7 +35,7 @@ class PeopleController extends Controller
 
         if($file = $request->file('file')) {
             $name = $file->getClientOriginalName();
-            $file->move('images/people', $name);
+            $file->move('images/uploads/people', $name);
             $input['image'] = $name;
         }
         Person::create($input);
@@ -56,7 +56,7 @@ class PeopleController extends Controller
 
         if($file = $request->file('file')) {
             $name = $file->getClientOriginalName();
-            $file->move('images', $name);
+            $file->move('images/uploads/people', $name);
             $input['image'] = $name;
         }
 

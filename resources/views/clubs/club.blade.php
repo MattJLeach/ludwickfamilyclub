@@ -68,7 +68,7 @@
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1">
           <div class="angle box text-center club-image paper-title">
-            <img src="/images/{{$club->image}}" alt="">
+            <img src="/images/uploads/clubs{{$club->image}}" alt="">
           </div>
         </div>
       </div>

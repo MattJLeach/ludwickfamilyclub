@@ -21,15 +21,15 @@
               {!! $facility->description !!}
               @if($facility->image1 && !$facility->image2)
               <div class="col-sm-6 col-sm-offset-3">
-                <img src="/images/facilities/{{ $facility->image1 }}" alt="{{ $facility->image1 }}" class="full-width">
+                <img src="/images/uploads/facilities/{{ $facility->image1 }}" alt="{{ $facility->image1 }}" class="full-width">
               </div>
               @endif
               @if($facility->image1 && $facility->image2)
               <div class="col-sm-6">
-                <img src="/images/facilities/{{ $facility->image1 }}" alt="{{ $facility->image1 }}" class="full-width">
+                <img src="/images/uploads/facilities/{{ $facility->image1 }}" alt="{{ $facility->image1 }}" class="full-width">
               </div>
               <div class="col-sm-6">
-                <img src="/images/facilities/{{ $facility->image2 }}" alt="{{ $facility->image2 }}" class="full-width">
+                <img src="/images/uploads/facilities/{{ $facility->image2 }}" alt="{{ $facility->image2 }}" class="full-width">
               </div>
               @endif
               <div class="clearfix"></div> 

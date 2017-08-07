@@ -35,13 +35,13 @@ class FacilitiesController extends Controller
         
         if($file1 = $request->file('file1')) {
             $name1 = $file1->getClientOriginalName();
-            $file1->move('images/facilities', $name1);
+            $file1->move('images/uploads/facilities', $name1);
             $input['image1'] = $name1;
         }
 
         if($file2 = $request->file('file2')) {
             $name2 = $file2->getClientOriginalName();
-            $file2->move('images/facilities', $name2);
+            $file2->move('images/uploads/facilities', $name2);
             $input['image2'] = $name2;
         }
 
@@ -63,13 +63,13 @@ class FacilitiesController extends Controller
         
         if($file1 = $request->file('file1')) {
             $name1 = $file1->getClientOriginalName();
-            $file1->move('images/facilities', $name1);
+            $file1->move('images/uploads/facilities', $name1);
             $input['image1'] = $name1;
         }
 
         if($file2 = $request->file('file2')) {
             $name2 = $file2->getClientOriginalName();
-            $file2->move('images/facilities', $name2);
+            $file2->move('images/uploads/facilities', $name2);
             $input['image2'] = $name2;
         }
 

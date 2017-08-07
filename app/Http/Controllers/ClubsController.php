@@ -35,7 +35,7 @@ class ClubsController extends Controller
 
         if($file = $request->file('file')) {
             $name = $file->getClientOriginalName();
-            $file->move('images/clubs', $name);
+            $file->move('images/uploads/clubs', $name);
             $input['image'] = $name;
         }
 
@@ -65,7 +65,7 @@ class ClubsController extends Controller
 
         if($file = $request->file('file')) {
             $name = $file->getClientOriginalName();
-            $file->move('images/clubs', $name);
+            $file->move('images/uploads/clubs', $name);
             $input['image'] = $name;
         }
 
