@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\ContactOption;
+use App\Message;
 
 class DashboardController extends Controller
 {
@@ -13,8 +14,9 @@ class DashboardController extends Controller
     }
 
     public function index() {
+        $messageCount = Message::count();
         $options = ContactOption::all();
-        return view('dashboard.index')->with('options', $options);
+        return view('dashboard.index')->with('options', $options)->with('messageCount', $messageCount);
     }
 
     public function addOption(Request $request) {

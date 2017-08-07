@@ -48,5 +48,7 @@ Route::get('/admin/person/create', 'PeopleController@create');
 Route::post('/admin/person/create', 'PeopleController@store');
 Route::get('/admin/person/{id}', 'PeopleController@edit');
 Route::put('/admin/person/{id}', 'PeopleController@update');
-Route::delete('/admin/person/image/{id}', 'PeopleController@remove');
 Route::delete('/admin/person/{id}', 'PeopleController@destroy');
+
+/* Contacts Admin */
+Route::get('/admin/messages', 'ContactController@admin');

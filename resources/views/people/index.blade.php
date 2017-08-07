@@ -18,8 +18,8 @@
   					<img src="/images/uploads/people/{{$person->image}}" alt="{{$person->name}}" class="people-img">
   				</div>
   				<div class="col-sm-8">
-  					<h2>{{$person->name}}</h2>
-  					<p>{{$person->description}}</p>
+  					<h2>{{ $person->name }}</h2>
+  					<p>{!! $person->description !!}</p>
   				</div>
   			</div>
   		</div>

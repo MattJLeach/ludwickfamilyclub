@@ -71,9 +71,4 @@ class PeopleController extends Controller
         $person->delete();
         return redirect('/admin/people');
     }
-
-    public function remove($id)
-    {
-        return Person::findOrFail($id);
-    }
 }

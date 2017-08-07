@@ -24,5 +24,15 @@
         </div>
       </div>
     </div>
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Message Count</h3>
+        </div>
+        <div class="panel-body">
+          <p>{{ $messageCount }}</p>
+        </div>
+      </div>
+    </div>
   </div>
 @endsection
