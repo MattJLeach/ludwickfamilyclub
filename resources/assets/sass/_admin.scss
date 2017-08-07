@@ -10,6 +10,21 @@
     width: 140px;
   }
 
+  .image-edit {
+    position: relative;
+    max-width: 350px;
+
+    img {
+      width: 100%;
+    }
+
+    .btn {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+  }
+
   footer {
     margin-top: 25px;
     padding-top: 15px;

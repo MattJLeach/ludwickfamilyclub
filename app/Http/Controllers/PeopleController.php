@@ -66,8 +66,14 @@ class PeopleController extends Controller
 
     public function destroy($id)
     {
+        return Person::findOrFail($id);
         $person = Person::findOrFail($id);
         $person->delete();
         return redirect('/admin/people');
+    }
+
+    public function remove($id)
+    {
+        return Person::findOrFail($id);
     }
 }

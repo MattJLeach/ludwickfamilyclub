@@ -8671,6 +8671,21 @@ button.close {
   width: 140px;
 }
 
+#admin .image-edit {
+  position: relative;
+  max-width: 350px;
+}
+
+#admin .image-edit img {
+  width: 100%;
+}
+
+#admin .image-edit .btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
 #admin footer {
   margin-top: 25px;
   padding-top: 15px;

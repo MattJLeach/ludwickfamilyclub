@@ -15,7 +15,7 @@
   		<div class="col-md-12">
   			<div class="angle box text-center people paper-title">
   				<div class="col-sm-4">
-  					<img src="/images/uploads/people/{{$person->image}}" alt="{{$person->name}}" class="people-img">  
+  					<img src="/images/uploads/people/{{$person->image}}" alt="{{$person->name}}" class="people-img">
   				</div>
   				<div class="col-sm-8">
   					<h2>{{$person->name}}</h2>
