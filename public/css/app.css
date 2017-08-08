@@ -8659,6 +8659,10 @@ button.close {
   background-color: white;
 }
 
+#site .admin-link {
+  color: #636B6F;
+}
+
 #admin {
   position: relative;
 }

@@ -63,7 +63,11 @@
           <div class="">
             Website designed and created by <a href="//mattleachdigital.com" target="_blank">Matt Leach</a>
           </div>
-          <a href="{{ route('login') }}">Admin Login</a>
+          @if (Auth::check())
+          <a href="{{ route('login') }}" class="admin-link">Dashboard</a>
+          @else
+          <a href="{{ route('login') }}" class="admin-link">Admin Login</a>
+          @endif
         </div>
         <div class="clearfix"></div>
       </footer>

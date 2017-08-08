@@ -52,6 +52,9 @@
                   <a href="{{ url('admin/messages') }}">Messages</a>
                 </li>
                 <li>
+                  <a href="#">Users</a>
+                </li>
+                <li>
                   <a href="{{ route('logout') }}"
                       onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
@@ -79,7 +82,9 @@
   <script src="{{asset('js/app.js')}}"></script>
   <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
   <script>
+    if($('.article-ckeditor')) {
       CKEDITOR.replace( 'article-ckeditor' );
+    }
   </script>
 		
 	</body>
