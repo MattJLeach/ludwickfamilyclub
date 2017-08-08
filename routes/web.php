@@ -52,3 +52,7 @@ Route::delete('/admin/person/{id}', 'PeopleController@destroy');
 
 /* Contacts Admin */
 Route::get('/admin/messages', 'ContactController@admin');
+
+/* Users Admin */
+Route::get('/admin/users', 'UsersController@admin');
+Route::delete('/admin/users/{id}', 'UsersController@destroy');

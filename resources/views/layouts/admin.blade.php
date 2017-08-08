@@ -51,8 +51,8 @@
                 <li class="{{ Request::is('admin/messages') ? 'active' : '' }}">
                   <a href="{{ url('admin/messages') }}">Messages</a>
                 </li>
-                <li>
-                  <a href="#">Users</a>
+                <li class="{{ Request::is('admin/users') ? 'active' : '' }}">
+                  <a href="{{ url('admin/users') }}">Users</a>
                 </li>
                 <li>
                   <a href="{{ route('logout') }}"
