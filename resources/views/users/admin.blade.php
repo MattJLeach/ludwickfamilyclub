@@ -3,7 +3,6 @@
 @section('content')
   <h1 class="text-center">Users</h1>
   <a href="/register" class="btn btn-primary pull-right">Add New</a>
-  <p>{{{ isset(Auth::user()->name) ? Auth::user()->name : Auth::user()->email }}}</p>
   
   @if(count($users) > 0)
     <table class="table table-hover">

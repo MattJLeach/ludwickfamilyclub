@@ -64,9 +64,9 @@
             Website designed and created by <a href="//mattleachdigital.com" target="_blank">Matt Leach</a>
           </div>
           @if (Auth::check())
-          <a href="{{ route('login') }}" class="admin-link">Dashboard</a>
+          <a href="{{ route('login') }}" class="admin-link"><small>Dashboard</small></a>
           @else
-          <a href="{{ route('login') }}" class="admin-link">Admin Login</a>
+          <a href="{{ route('login') }}" class="admin-link"><small>Admin Login</small></a>
           @endif
         </div>
         <div class="clearfix"></div>
