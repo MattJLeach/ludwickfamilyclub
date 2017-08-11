@@ -78,6 +78,10 @@
         </div>
       </div>
 
+      @if($club->file)
+      <div class="alert alert-danger" role="alert">Uploading a new image will override the current one</div>
+      @endif
+
       <div class="col-md-6">
         <div class="form-group">
           {!! Form::label('file', 'Image File') !!}

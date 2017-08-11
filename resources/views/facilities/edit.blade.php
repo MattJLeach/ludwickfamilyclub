@@ -16,15 +16,22 @@
       {!! Form::textarea('description', null, ['id'=>'article-ckeditor', 'class'=>'form-control']) !!}
     </div>
 
+    @if($facility->image1 || $facility->image2)
+    <div class="alert alert-danger" role="alert">Uploading a new image will override the current one</div>
+    @endif
+
     <div class="form-group">
-      {!! Form::file('image1', ['class'=>'form-control']) !!}
+      {!! Form::file('image1') !!}
     </div>
 
     <div class="form-group">
-      {!! Form::file('image2', ['class'=>'form-control']) !!}
+      {!! Form::file('image2') !!}
     </div>
 
-    {!! Form::submit('Create', ['class'=>'btn btn-primary pull-right']) !!}
+    <div class="col-md-12">
+      <a href="/admin/facilities" class="btn btn-primary">Back</a>
+      {!! Form::submit('Create', ['class'=>'btn btn-success pull-right']) !!}
+    </div>
 
   {!! Form::close() !!}
 

@@ -26,7 +26,10 @@
       {!! Form::file('file2') !!}
     </div>
 
-    {!! Form::submit('Create', ['class'=>'btn btn-primary pull-right']) !!}
+    <div class="col-md-12">
+      <a href="/admin/facilities" class="btn btn-primary">Back</a>
+      {!! Form::submit('Create', ['class'=>'btn btn-success pull-right']) !!}
+    </div>
 
   {!! Form::close() !!}
 

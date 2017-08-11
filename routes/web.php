@@ -20,6 +20,9 @@ Route::get('/contact', 'ContactController@index');
 Route::post('/contact', 'ContactController@store');
 Route::get('/contact/thank-you', 'ContactController@thanks');
 
+Route::get('/setup', 'SetupController@index');
+Route::post('/setup', 'SetupController@store');
+
 Auth::routes();
 
 /* Admin Dashboard */
